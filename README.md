@@ -1,44 +1,19 @@
+# Blockchain Lottery system adapted for Ethereum and Binance Smart Chain
 
-# Lottery smart contract
-### install truffle to deploy on local development, testnet, mainnet, etc
-```shell
-yarn add truffle
+A web3 implementation of a decentralized provably random lottery using Chainlink VRF and Chainlink alarm clock to have a totally decentralized lottery. Check the ETH readme for how to do the truffle stuff.
+
+## The front end is not cool.
+
+# To run:
+
+```
+git clone <this_repo>
+cd chainlink-lottery
+npm install
 ```
 
-### install ganache module to set up local development environment
-```shell
-npm install -g ganache
-```
+Make sure you have `RPC_URL` and `MNEMONIC` in your environment variables
 
-### install node modules
-```shell
-yarn install
-```
+# Mirgrate
 
-### if you want to deploy the smart contract on the local
-```shell
-truffle migrate --reset --network development
-```
-
-### if you want to deploy the smart contract on bsc-testnet
-```shell
-truffle migrate --reset --network testnet
-```
-
-### if you want to deploy the smart contract on bsc-mainnet
-```shell
-truffle migrate --reset --network bsc
-```
-
-### after you deployed the smart contract successfully
-```shell
-yarn start
-```
-
-### if you want to deploy this lottery site to cloud
-```shell
-yarn build
-```
-
-### note
-after running `yarn build`, you need to copy abi directory from `src/abi` to `build/abi`
+`truffle migrate --network live`
